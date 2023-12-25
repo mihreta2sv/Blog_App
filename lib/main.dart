@@ -123,7 +123,7 @@ class _LandingPageState extends State<LandingPage> {
       child: ElevatedButton(
           onPressed: () async {
             await lds.deleteFromStorage("Token");
-            print("logging out");
+            print("logging out NOW");
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) => SecondScreen()));
           },
